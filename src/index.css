@@ -179,7 +179,7 @@ body{
 }
 .parent_img-pf .img{
     @apply w-full bg-cover bg-center relative
-    before:absolute before:left-0 before:top-0 before:w-full before:h-full md:before:bg-gray-900/90 before:transition-all before:duration-300 before:hover:bg-transparent
+    before:absolute before:left-0 before:top-0 before:w-full before:h-full md:before:bg-gray-900/60 before:transition-all before:duration-300 before:hover:bg-transparent
 }
 /* IMAGE PORTFOLIO END */
 
