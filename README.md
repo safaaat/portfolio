@@ -1,5 +1,5 @@
 # My Portfolio Website
-Klik link untuk melihat website portfolio saya [Safaat_Art](https://github.com/facebook/create-react-app).
+Klik link untuk melihat website portfolio saya [Safaat_Art](https://safaaat.github.io).
 
 
 ## Teknologi
