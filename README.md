@@ -5,7 +5,7 @@ Klik link untuk melihat website portfolio saya [Safaat_Art](https://safaaat.gith
 ## Teknologi
 React Js, Taillwind Css
 
-## npm instal
+## npm install
 untuk menginstal node_modules agar website dapat di buka di localhost.
 
 
