@@ -1,13 +1,227 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TEXT */
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nanum+Myeongjo:wght@400;700;800&display=swap');
+/* TEXT END */
+
+body{
+    font-family: 'Nanum Myeongjo', serif;
+    @apply bg-[#14031a] text-white
+}
+.container{
+    @apply mt-[2.5rem] flex flex-col-reverse items-center justify-center gap-[2rem] w-full md:grid-cols-2 md:grid
+}
+.container-mobile{
+    @apply grid grid-cols-[55%_45%] mt-[1.7rem]
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* APP */
+.container-border-box{
+    @apply h-auto pt-[3rem] pb-[2rem] flex items-center justify-center 
 }
+.border-box{
+    @apply bg-[#5d5261] rounded-pc
+}
+/* APP END */
+
+/* TEXT HOME */
+.text-name{
+    font-family: 'Abril Fatface', cursive;
+    @apply text-[1.65rem] 360:text-[1.8rem] 375:text-[2rem] 414:text-[2.25rem] 500:text-[2.5rem] sm:text-[3rem] md:text-[1.6rem] lg:text-[2.6rem] 1160:text-[3rem] text-white
+}
+.text-name_mobile{
+    font-family: 'Abril Fatface', cursive;
+    @apply text-2xl text-white
+}
+.text-info{
+    @apply text-gray-300 mt-[1rem] text-start  text-[15px] sm:text-sm w-[95%] 500:w-[90%] 800:w-[100%] 940:w-[80%]
+}
+.text-info_mobile{
+    @apply mt-[1rem] text-sm text-justify
+}
+.border-text-home{
+    @apply rounded-pc backdrop-blur-md bg-transparent shadow-white shadow-[0px_0px_5px_0px] py-[1rem] mb-[1.5rem] mx-5
+    sm:mr-[1.5rem] sm:-ml-[4rem] sm:pl-backdrop-pc sm:pr-2
+    950:mb-0 950:mr-0
+}
+.border-text-home_mobile{
+    @apply rounded-pc backdrop-blur-md bg-transparent shadow-white shadow-[0px_0px_5px_0px] py-[.5rem] mb-[1.5rem] mx-5
+    sm:mr-[1.5rem] sm:-ml-[4rem] sm:pl-backdrop-pc sm:pr-2
+    950:mb-0 950:mr-0
+}
+.parent-icon-texthome{
+    @apply top-0 left-[1rem] flex items-center justify-center gap-[15%] px-2 sm:px-0 sm:mt-0 sm:gap-[2rem] md:gap-[2rem] 950:gap-[2rem] h-full sm:absolute sm:grid-flow-row sm:content-center sm:justify-items-center sm:grid
+}
+.parent-icon-texthome_mobile{
+    @apply top-0 left-[1rem] sm:px-0 sm:mt-0 gap-[1.5rem] h-full absolute grid-flow-row content-center justify-items-center grid
+}
+/* TEXT HOME END */
+
+/* NAVBAR */
+.parent-navbar{
+    @apply w-[90%] mx-auto px-7 -mt-[2rem] 800:-mt-[1rem] 801:-mt-[2rem] shadow-[0px_0px_20px_0px] shadow-white border-x-4 border-white/50 relative z-50 bg-white/10 rounded-pc
+}
+.navbar{
+    @apply flex justify-between items-center
+}
+.ul-nav{
+    @apply grid grid-cols-3 justify-items-center gap-3
+    items-center justify-center 500:gap-11 950:flex
+}
+.li-nav:nth-child(4){
+    @apply absolute ml-[-37%] top-[12rem]
+    950:static 950:ml-0
+}
+.li-nav:nth-child(5){
+    @apply absolute mr-[-37%] top-[12rem]
+    950:static 950:mr-0
+}
+.ul-nav .icon{
+    @apply text-xl
+}
+.ul-nav .button{
+    @apply text-lg flex flex-col items-center justify-center transition-all duration-300 hover:text-color-primary
+}
+.ul-nav .active{
+    @apply text-color-primary relative transition-all duration-300
+    before:w-full before:h-[2px] before:bg-color-primary before:absolute before:bottom-0
+}
+.navbar .toggle{
+    @apply inline-block my-[.75rem] transition-all duration-300 cursor-pointer hover:text-color-primary 950:hidden
+}
+.judul-web{
+    font-family: 'Abril Fatface', cursive;
+    @apply cursor-pointer text-color-primary hover:text-[#9cd335] inline-block
+}
+.parent-nav-mobile{
+    @apply absolute inline-block w-full bg-white/20 z-10 rounded-t-pc rounded-b-3xl backdrop-blur-sm  overflow-hidden transition-all duration-300 
+}
+.parent-nav-mobile-aktif{
+    @apply h-[16.5rem] backdrop-blur-xl transition-all duration-300 bg-white/20 shadow-[0px_0px_10px_0px] shadow-black/50
+    950:h-[4.1rem] 950:duration-[0ms] 950:backdrop-blur-sm 950:shadow-black/0
+}
+/* NAVBAR */
+
+/* IMAGE HOME */
+.img-logo-sa{
+    @apply absolute w-full 500:w-[90%] sm:w-[100%] xl:w-[90%]
+}
+.img-background-sa{
+    @apply w-[86%] 500:w-[74%] sm:w-[80%] xl:w-[72%]
+}
+/* IMAGE HOME END */
+
+/* SOCIALMEDIA */
+.icon-button{
+    @apply transition-all duration-300 hover:text-color-primary cursor-pointer relative text-gray-400
+}
+/* SOCIALMEDIA END */
+
+/* SKILL */
+.container-skill{
+    @apply 500:pb-[1rem] 1200:py-[5.5rem] mx-[1rem]
+}
+.judul-skill{
+    @apply font-semibold text-2xl capitalize text-color-primary relative inline-block
+
+    before:absolute before:w-full  before:h-[2px] before:bg-color-primary before:-bottom-1
+}
+.parent-icon{
+    @apply relative border-2 border-gray-400 text-gray-400 flex flex-col items-center justify-center
+    hover:shadow-[inset_0_0_4px_0] hover:shadow-white hover:text-white hover:border-white
+
+    before:absolute before:w-[1rem] before:h-[3rem] before:bg-transparent  before:left-[-8px]
+}
+.text-icon{
+    @apply w-0 h-0 text-base overflow-hidden group-hover:w-auto group-hover:h-auto transition-all duration-300 capitalize
+}
+.size-box-skill{
+    @apply w-[5rem] h-[5rem]
+}
+/* SKILL END */
+
+/* CONTACT */
+.container-contact{
+    @apply flex flex-wrap justify-center mt-[2.5rem] mb-[1rem] py-[3rem] 940:py-[7.8rem] items-center w-[95%] 500:w-full mx-auto
+}
+/* CONTACT END */
+
+/* TEXT PORTFOLIO */
+.container-text-port{
+    @apply absolute grid content-center md:inline-block bg-gray-800/90 rounded-md h-full md:h-auto md:bg-transparent md:relative z-[1]
+}
+.container-text-port .nama-project{
+    @apply font-semibold text-xl 500:text-2xl ml-5 absolute  md:backdrop-blur-lg lg:backdrop-blur-none lg:static md:w-[130%] 777:w-[120%] lg:w-auto
+}
+.container-text-port .parent-box{
+    @apply sm:bg-black/10 sm:mr-4 md:mr-0 sm:backdrop-blur-md sm:shadow-[0px_0px_5px_0px] sm:shadow-white sm:rounded-2xl sm:-ml-[3rem] pl-5 sm:pl-[4.3rem] pr-2 py-2 mt-[2rem] 500:mt-[2.5rem] sm:mt-[3rem] lg:mt-[1rem] text-gray-300 md:w-[230%] 940:w-[190%] lg:w-[150%] xl:w-[130%] z-10 relative
+}
+.container-text-port .icon{
+    @apply hover:text-color-primary transition-all duration-300
+}
+.container-text-port .parent-teknologi{
+    @apply ml-5 text-gray-400
+}
+.container-text-port .teknologi{
+    @apply flex items-center mt-3 gap-3 cursor-default md:absolute z-10 text-sm md:backdrop-blur-lg xl:backdrop-blur-none md:w-[190%] 811:w-[170%] 1024:w-[120%] 1160:w-full
+}
+/* TEXT PORTFOLIO END */
+
+/* IMAGE PORTFOLIO */
+.parent_img-pf{
+    @apply md:mr-5 relative overflow-hidden rounded-md
+}
+.parent_img-pf .bg-green{
+    @apply absolute top-0 left-0 bg-color-primary/20 w-full hover:bg-color-primary/0 transition-all duration-300
+}
+.parent_img-pf .img{
+    @apply w-full bg-cover bg-center relative
+    before:absolute before:left-0 before:top-0 before:w-full before:h-full md:before:bg-gray-900/90 before:transition-all before:duration-300 before:hover:bg-transparent
+}
+/* IMAGE PORTFOLIO END */
+
+/* ABOUT */
+.container-about{
+    @apply grid md:grid-cols-[40%_60%] mt-[1.1rem] py-[2rem] gap-[2rem] md:gap-2 mx-5 sm:ml-2
+}
+.container-about_mobile{
+    @apply grid grid-cols-[40%_60%] mt-[1.1rem] py-[2rem] gap-4 mx-5 ml-2
+}
+/* ABOUT END */
+
+/* TEXT ABOUT */
+.border-textabout{
+    @apply rounded-pc backdrop-blur-md bg-transparent shadow-white shadow-[0px_0px_5px_0px] py-[1rem] sm:-mr-[3.5rem] sm:pr-backdrop-pc sm:pl-4
+}
+.parent-socialmedia{
+    @apply sm:absolute top-0 right-0 flex sm:flex-col items-center sm:w-[3.5rem] md:w-[4rem] h-full justify-center gap-[2.5rem]
+
+}
+/* TEXT ABOUT END */
+
+/* IMAGE ABOUT */
+.parent-img-about{
+    @apply flex items-center justify-center overflow-hidden relative
+}
+.border-hover{
+    @apply relative w-[15.2rem] h-[23rem] z-[2] border-2 border-white shadow-[0px_0px_10px_0px] rounded-tr-[2rem] shadow-white transition-all duration-300
+    hover:rounded-none hover:border-white/0 hover:shadow-white/0
+
+    before:absolute before:top-[-2.5rem] before:left-[-1rem] before:bg-color-bg before:w-[3rem] before:h-[6rem] before:rotate-45 before:z-[1] before:transition-all before:duration-300
+    before:hover:w-0
+}
+.img-about{
+    @apply w-full h-full bg-center bg-cover bg-no-repeat bg-black rounded-tr-[2rem] transition-all duration-300 relative overflow-hidden
+    hover:rounded-none
+
+    before:absolute before:top-[-2.5rem] before:left-[-1rem] before:bg-color-bg before:w-[3rem] before:h-[6rem] before:rotate-45 before:z-[1] before:transition-all before:duration-300 before:border-2 before:border-white
+    before:hover:w-0
+
+    after:absolute after:w-[50%] after:h-full after:left-0 after:bg-color-primary/40 after:transition-all after:duration-300 after:delay-300
+    after:hover:w-0 after:hover:delay-300
+}
+/* IMAGE ABOUT END */
+
