@@ -18,7 +18,7 @@ const TextHome = ({ sizeActive }) => {
                         <p className={!sizeActive
                             ? "text-info"
                             : "text-info_mobile"
-                        }>Saya lulusan baru, informatika di Universitas Nasional. Saya sangat tertarik dengan pengembangan website, berfukus pada bagian Front End Developer, saya juga bisa menggunakan Software Design.</p>
+                        }>Saya lulusan 2022, informatika di Universitas Nasional. Saya sangat tertarik dengan pengembangan website, berfokus pada bagian Front End Developer, saya juga bisa menggunakan Software Design.</p>
                     </div>
 
                     {/* Social Media */}

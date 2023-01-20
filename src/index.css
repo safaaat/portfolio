@@ -197,7 +197,7 @@ body{
     @apply rounded-pc backdrop-blur-md bg-transparent shadow-white shadow-[0px_0px_5px_0px] py-[1rem] sm:-mr-[3.5rem] sm:pr-backdrop-pc sm:pl-4
 }
 .parent-socialmedia{
-    @apply sm:absolute top-0 right-0 flex sm:flex-col items-center sm:w-[3.5rem] md:w-[4rem] h-full justify-center gap-[2.5rem]
+    @apply sm:absolute top-0 right-0 flex sm:flex-col items-center sm:w-[2.25rem] md:w-[2.7rem] h-full justify-center gap-[2.5rem]
 
 }
 /* TEXT ABOUT END */

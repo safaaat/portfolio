@@ -5,7 +5,7 @@ const Skill = ({ sizeActive }) => {
 
     return (
         <>
-            <div className={!sizeActive ? "500:pb-[1rem] 1200:py-[5.5rem] mx-[1rem]" : "mx-[1rem] mt-1 py-[2rem] mb-2"}>
+            <div className={!sizeActive ? "500:pb-[1rem] 500:pt-[.5rem] 1200:py-[6.05rem] mx-[1rem]" : "mx-[1rem] mt-1 py-[2rem] mb-2"}>
                 <div className="w-full flex justify-center">
                     <h2 className={!sizeActive ? "judul-skill mt-[2rem]" : "judul-skill mt-[1rem]"}>bisa menggunakan</h2>
                 </div>

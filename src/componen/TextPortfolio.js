@@ -23,7 +23,9 @@ const TextPortfolio = () => {
                         <p>Fake Api JSON Server</p>
                     </div>
                     <div className="mt-[1rem] gap-[1.5rem] sm:mt-2 flex text-[1.5rem] sm:gap-3 sm:hidden">
-                        <a href="https://github.com/safaaat/gelcoffe" target="_blank" rel="noreferrer" className="icon"><FaGithubSquare /></a>
+                        <a href="https://github.com/safaaat/gelcoffe" target="_blank" rel="noreferrer" className="icon">
+                            <FaGithubSquare />
+                        </a>
                         <a href="https://safaaat.github.io/gelcoffe" target="_blank" rel="noreferrer" className="icon">
                             <BiLinkExternal />
                         </a>
