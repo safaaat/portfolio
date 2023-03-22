@@ -2,6 +2,8 @@ import React, { useCallback, useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { About, Contact, Home, Portfolio, Skill } from "./pages/index";
 import Navbar from "./componen/Navbar";
+import NotFound from "./pages/NotFound";
+import PrivateRoute from "./utils/PrivateRoute";
 
 const App = () => {
   const [active, setActive] = useState(false);
@@ -28,6 +30,9 @@ const App = () => {
             <Route path="portfolio" element={<Portfolio sizeActive={active} />} />
             <Route path="skill" element={<Skill sizeActive={active} />} />
             <Route path="contact" element={<Contact sizeActive={active} />} />
+            <Route element={<PrivateRoute />}>
+              <Route path="*" element={<NotFound />} />
+            </Route>
           </Routes>
         </div>
       </div>

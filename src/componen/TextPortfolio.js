@@ -20,7 +20,8 @@ const TextPortfolio = ({ filterData, sizeActive }) => {
             className={!sizeActive
                 ? "container-text-port relative"
                 : "container-text-port absolute"
-            }>
+            }
+        >
             {filterData.map((data) => (
                 <div key={data.id}>
                     <span className="text-color-primary ml-5">Project</span>
