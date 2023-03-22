@@ -36,7 +36,7 @@ const Portfolio = ({ sizeActive }) => {
             {/* Size Tablet And Pc */}
             <div className="hidden sm:inline">
                 <div
-                    className={`relative grid w-[95%] h-auto md:w-full mx-auto md:grid-cols-[30%_70%] lg:grid-cols-[35%_65%] xl:grid-cols-[40%_60%] mt-[3rem] bg-cover bg-center bg-red-300`}
+                    className={`relative grid w-[95%] h-auto md:w-full mx-auto md:grid-cols-[30%_70%] lg:grid-cols-[35%_65%] xl:grid-cols-[40%_60%] mt-[3rem] bg-cover bg-center`}
                 >
                     <TextPortfolio sizeActive={sizeActive} filterData={filterData} />
                     <ImagePortfolio sizeActive={sizeActive} filterData={filterData} />

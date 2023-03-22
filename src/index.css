@@ -171,9 +171,6 @@ body{
 /* TEXT PORTFOLIO END */
 
 /* IMAGE PORTFOLIO */
-/* .img-portfolio{
-    background-image: url(`${process.env.PUBLIC_URL + '/assets/image/portofolio/catatan.png'}`)
-} */
 .parent_img-pf{
     @apply md:mr-5 relative overflow-hidden rounded-md
 }
