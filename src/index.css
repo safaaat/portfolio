@@ -151,7 +151,7 @@ body{
 
 /* TEXT PORTFOLIO */
 .container-text-port{
-    @apply absolute grid content-center md:inline-block bg-gray-800/90 rounded-md h-full md:h-auto md:bg-transparent md:relative z-[1]
+    @apply absolute grid content-center md:inline-block bg-gray-800/90 h-full md:h-auto md:bg-transparent md:relative z-[1]
 }
 .container-text-port .nama-project{
     @apply font-semibold text-xl 500:text-2xl ml-5 absolute  md:backdrop-blur-lg lg:backdrop-blur-none lg:static md:w-[130%] 777:w-[120%] lg:w-auto
@@ -224,4 +224,14 @@ body{
     after:hover:w-0 after:hover:delay-300
 }
 /* IMAGE ABOUT END */
+
+/* Button Pagination */
+.number_pagination{
+    @apply border-2 px-2 border-gray-200 cursor-pointer transition-all duration-300
+}
+.number_pagination-active{
+    @apply border-2 px-2 border-color-primary text-white bg-color-primary cursor-pointer transition-all duration-300
+}
+/* Button Pagination End */
+
 

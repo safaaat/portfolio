@@ -1,6 +1,6 @@
 import React from "react";
 
-const ImageAbout = () => {
+const ImageAbout = ({ currentPgition }) => {
     return (
         <div className="parent-img-about">
             <div className="border-hover">
