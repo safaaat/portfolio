@@ -151,7 +151,7 @@ body{
 
 /* TEXT PORTFOLIO */
 .container-text-port{
-    @apply absolute grid content-center md:inline-block bg-gray-800/90 h-full md:h-auto md:bg-transparent md:relative z-[1]
+    @apply grid content-center md:inline-block bg-gray-800/90 h-full w-full md:h-auto md:bg-transparent md:relative z-[1] py-4
 }
 .container-text-port .nama-project{
     @apply font-semibold text-xl 500:text-2xl ml-5 absolute  md:backdrop-blur-lg lg:backdrop-blur-none lg:static md:w-[130%] 777:w-[120%] lg:w-auto
@@ -171,6 +171,9 @@ body{
 /* TEXT PORTFOLIO END */
 
 /* IMAGE PORTFOLIO */
+/* .img-portfolio{
+    background-image: url(`${process.env.PUBLIC_URL + '/assets/image/portofolio/catatan.png'}`)
+} */
 .parent_img-pf{
     @apply md:mr-5 relative overflow-hidden rounded-md
 }
