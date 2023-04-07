@@ -16,6 +16,15 @@ const dataPortfolio = [
         linkGithub: "https://github.com/safaaat/fontend_catatan",
         linkWebsite: "https://safaaat.github.io/fontend_catatan",
         image: "catatan.png"
+    },
+    {
+        id: 3,
+        judul: "See Repository",
+        keterangan: "See Repository adalah website untuk melihat 5 users berdasarkan kemiripan sesuai input text, dan menampilkan isi repository dari users tersebut. Yang di tampilkan berupa judul repo, deskripsi, dan start. Api's yang gunakan adalah Api's https://api.github.com",
+        teknologi: ["React Js", "|", "TypeScript", "|", "Redux"],
+        linkGithub: "https://github.com/safaaat/see_repository",
+        linkWebsite: "https://safaaat.github.io/see_repository",
+        image: "seeRepository.png"
     }
 ]
 

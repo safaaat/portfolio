@@ -19,6 +19,8 @@ const Portfolio = ({ sizeActive }) => {
         updateFilter()
     }, [updateFilter])
 
+    console.log(dataPortfolio)
+
     return (
         <>
             {/* Size Handphone */}
